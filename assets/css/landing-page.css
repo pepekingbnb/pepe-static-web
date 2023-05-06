@@ -471,7 +471,7 @@ h3 {
       .app-section .grid-wrapper {
         flex-direction: column; } }
     .app-section .grid-wrapper .feat {
-      flex: 0 1 50%;
+      // flex: 0 1 50%;
       text-align: center;
       margin-bottom: 50px; }
       .app-section .grid-wrapper .feat__icon {
