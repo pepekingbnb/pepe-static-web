@@ -27,7 +27,7 @@ html {
 body {
     font-family: $text-primary;
     color: $color-secondary;
-    background: #195815;
+    background: linear-gradient(#166620, #195915);
 }
 
 ul {
@@ -67,7 +67,8 @@ p {
 }
 
 img {
-    vertical-align: bottom
+    vertical-align: bottom;
+    padding: 4px;
 }
 
 img::selection {

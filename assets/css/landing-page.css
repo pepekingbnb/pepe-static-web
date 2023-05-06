@@ -400,7 +400,7 @@ html {
 body {
   font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #c1ccdc;
-  background: #195815;  }
+  background: linear-gradient(#166620, #195915);  }
 
 ul {
   list-style: none;
@@ -432,7 +432,8 @@ p {
   color: #FFF; }
 
 img {
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  padding: 4px;  }
 
 img::selection {
   background: transparent; }
@@ -739,9 +740,9 @@ h3 {
   font-weight: 700; }
 
 .btn--green {
-  background-color: #16db93; }
+  background-color: #30b06a; }
 
 .btn--blue {
-  background-color: #30b06a; }
+  background-color: #297aec; }
 
 /*# sourceMappingURL=landing-page.css.map */
