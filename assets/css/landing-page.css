@@ -300,9 +300,9 @@ div.google-visualization-tooltip {
     @media (max-width: 991px) {
       .header .navbar .navbar__menu ul {
         padding: 8px 0px;
-        background: #f9f9f9;
+        background: #23561d;
         margin-top: 30px;
-        border-radius: 8px;
+        border-radius: 16px;
         box-shadow: 2px 15px 50px -5px rgba(0, 0, 0, 0.08); } }
     .header .navbar .navbar__menu ul li {
       display: inline-block; }
