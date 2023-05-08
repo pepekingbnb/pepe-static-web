@@ -42,7 +42,6 @@
   }
   .timeline-item:nth-child(odd) {
     padding-right: calc(50% + 30px);
-    text-align: right;
   }
   .timeline-item:nth-child(even) {
     padding-left: calc(50% + 30px);
@@ -62,19 +61,19 @@
     margin: 6px 0 15px;
   }
   .timeline-content {
-    border-radius: 16px;
+    border-radius: 24px;
     padding: 24px;
     width: 100%;
     overflow: hidden;
-    background: #1b5315;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 16%);
+    background: url(icon-1.png) right center / auto 100% no-repeat border-box #fcfcff;
+    box-shadow: rgba(51, 53, 72, 0.05) 0px 10px 24px 0px;;
   }
   .timeline-content h3 {
-    color: #fff;
+    color: #0c0d0c;
     font-size: 32px;
   }
   .timeline-content p {
-    color: #abb3bf;
+    color: #22262b;
     line-height: 1.7;
     font-size: 20px;
   }
@@ -82,7 +81,7 @@
 .sec-row {
       display: flex;
       font-size: 0;
-      justify-content: space-between;
+      // justify-content: space-between;
   }
 @media (max-width: 760px) {
 .sec-row {
@@ -91,7 +90,7 @@
   }
 
 .sec-left {
-      padding: 0px 120px 0px 0px;
+      padding: 0px 60px 0px 0px;
   }
   @media (max-width: 480px) {
 .sec-left {
@@ -232,14 +231,32 @@ div.google-visualization-tooltip {
 
 .card-box {
   font-size: 28px;
-  background: #1b5215;
+  background: url(icon-1.png) right bottom / auto 40% no-repeat border-box #fcfcff;
   border-radius: 24px;
   padding: 48px;
-  font-weight: 600;}
+  font-weight: 600;
+  box-shadow: rgba(51, 53, 72, 0.04) 0px 10px 24px 0px; }
   @media (max-width: 991px) {
     .card-box {
       display: block;
       padding: 20px;
+      font-size: 20px;
+      font-weight: 600; }
+    }
+
+.card-box-buy {
+  font-size: 28px;
+  background: url(icon-1.png) right bottom / auto 100% no-repeat border-box #fcfcff;
+  border-radius: 24px;
+  padding: 24px;
+  margin: 24px;
+  font-weight: 600;
+  box-shadow: rgba(51, 53, 72, 0.04) 0px 10px 24px 0px; }
+  @media (max-width: 991px) {
+    .card-box-buy {
+      display: block;
+      background: url(icon-1.png) right bottom / auto 40% no-repeat border-box #fcfcff;
+      padding: 12px;
       font-size: 20px;
       font-weight: 600; }
     }
@@ -273,7 +290,7 @@ div.google-visualization-tooltip {
       display: block;
       width: 100%;
       height: 2px;
-      background: #c1ccdc;
+      background: #28282d;
       border-radius: 2px;
       transition: all 300ms ease; }
       .header .navbar .menu-toggle span:not(:last-child) {
@@ -300,7 +317,7 @@ div.google-visualization-tooltip {
     @media (max-width: 991px) {
       .header .navbar .navbar__menu ul {
         padding: 8px 0px;
-        background: #23561d;
+        background: #fff;
         margin-top: 30px;
         border-radius: 16px;
         box-shadow: 2px 15px 50px -5px rgba(0, 0, 0, 0.08); } }
@@ -311,7 +328,7 @@ div.google-visualization-tooltip {
           display: block; } }
       .header .navbar .navbar__menu ul li a {
         display: block;
-        color: #fafcff;
+        color: #15151b;
         font-weight: 700;
         font-size: 16px;
         padding: 45px 25px;
@@ -372,7 +389,7 @@ div.google-visualization-tooltip {
         width: 100%;
         height: 100%;
         position: absolute;
-        background: linear-gradient(transparent, transparent, #195915);
+        background: linear-gradient(transparent, transparent, #f5f5f5);
         z-index: 1; }
 
 /*
@@ -399,8 +416,8 @@ html {
 
 body {
   font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #c1ccdc;
-  background: linear-gradient(#166620, #195915);  }
+  color: #28282d;
+  background: linear-gradient(white, #e1e5ee);    }
 
 ul {
   list-style: none;
@@ -417,18 +434,20 @@ a {
 
 h1 {
   font-size: 45px;
-  color: #fafcff;
+  color: #15151b;
   font-weight: 800; }
 
 p {
-  color: #c1ccdc;
-  line-height: 1.7; }
+  color: #28282d;
+  line-height: 1.3;
+  font-size: 24px;
+  padding: 12px;  }
 
 .text-center {
   text-align: center; }
 
 ::selection {
-  background: #c1ccdc;
+  background: #28282d;
   color: #FFF; }
 
 img {
@@ -439,12 +458,12 @@ img::selection {
   background: transparent; }
 
 h2 {
-  color: #fafcff;
+  color: #15151b;
   font-weight: 800;
   font-size:42px;  }
 
 h3 {
-  color: #fafcff;
+  color: #15151b;
   font-size: 30px; }
 
 .section-head {
@@ -453,7 +472,7 @@ h3 {
     margin-bottom: 16px;
    }
   .section-head h4 {
-    color: #cdd5dd;
+    color: #414352;
     font-weight: 600;
     font-size:20px;
     margin-top: 0px; }
@@ -462,7 +481,7 @@ h3 {
 ** Cryptogram Applications?
 ==================================*/
 .app-section {
-  background: linear-gradient(transparent, #195915); }
+  // background: linear-gradient(transparent, #f5f5f5); }
   .app-section .grid-wrapper {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -495,8 +514,8 @@ h3 {
 ** What can you do with Telegram?
 ==================================*/
 .features-section {
-  background: linear-gradient(transparent, #195915);
-  padding-top: 60px; }
+  // background: linear-gradient(transparent, #f5f5f5);
+  padding: 60px 0 100px; }
   .features-section .grid-wrapper {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -530,7 +549,7 @@ h3 {
 ** Why switch to Telegram?
 ===========================*/
 .specs-section {
-  padding: 250px 0 100px; }
+  padding: 120px 0 100px; }
   .specs-section .grid-wrapper {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -558,7 +577,7 @@ h3 {
 ** What Telegram Thinks
 ===========================*/
 .news-section {
-  background: linear-gradient(#195915, transparent);
+  // background: linear-gradient(#f5f5f5, transparent);
   padding: 50px 0 100px; }
   .news-section .flex-wrapper {
     flex-wrap: wrap;
@@ -568,11 +587,11 @@ h3 {
       .news-section .flex-wrapper {
         display: block; } }
     .news-section .flex-wrapper .post {
-      border-radius: 8px;
+      border-radius: 24px;
       width: 31.5%;
       overflow: hidden;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
-      background: #1f621b;  }
+      box-shadow: rgba(51, 53, 72, 0.05) 0px 10px 24px 0px;
+      background: #fcfcfc;  }
       @media only screen and (max-width: 767px) {
         .news-section .flex-wrapper .post {
           width: auto;
@@ -597,12 +616,12 @@ h3 {
           display: flex;
           flex-wrap: wrap; }
           .news-section .flex-wrapper .post .post-body__share-btns a {
-            color: #c1ccdc;
+            color: #28282d;
             font-size: 13px;
             font-weight: 700;
             position: relative; }
             .news-section .flex-wrapper .post .post-body__share-btns a:hover {
-              color: #cdd5dd; }
+              color: #414352; }
             .news-section .flex-wrapper .post .post-body__share-btns a span::after {
               content: "";
               display: inline-block;
@@ -611,10 +630,10 @@ h3 {
               left: 32px;
               width: 0;
               opacity: 0;
-              border-bottom: 2px solid #c1ccdc;
+              border-bottom: 2px solid #28282d;
               transition: all 300ms ease-in-out; }
             .news-section .flex-wrapper .post .post-body__share-btns a:hover span::after {
-              border-bottom: 2px solid #cdd5dd;
+              border-bottom: 2px solid #414352;
               width: calc(100% - 32px);
               opacity: 1; }
             .news-section .flex-wrapper .post .post-body__share-btns a:not(:last-child) {
@@ -654,7 +673,7 @@ h3 {
 ===========================*/
 .footer {
   padding: 90px 0 0;
-  background: linear-gradient(to top left, #143712, transparent); }
+  // background: linear-gradient(to top left, #143712, transparent); }
   .footer .flex-wrapper {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -685,7 +704,7 @@ h3 {
         .footer .flex-wrapper .flex-item:first-child {
           margin-bottom: 50px; } }
       .footer .flex-wrapper .flex-item h4 {
-        color: #fafcff;
+        color: #15151b;
         margin-bottom: 35px; }
       .footer .flex-wrapper .flex-item ul li {
         display: block;
@@ -694,7 +713,7 @@ h3 {
         .footer .flex-wrapper .flex-item ul li:not(:last-child) {
           margin-bottom: 20px; }
         .footer .flex-wrapper .flex-item ul li:hover {
-          color: #cdd5dd; }
+          color: #414352; }
   .footer .copyrights {
     display: -webkit-flex;
     display: flex;
@@ -709,7 +728,7 @@ h3 {
       .footer .copyrights ul li:not(:last-child) {
         margin-right: 35px; }
       .footer .copyrights ul li:hover {
-        color: #cdd5dd; }
+        color: #414352; }
       @media only screen and (max-width: 767px) {
         .footer .copyrights ul li:not(:last-child) {
           margin-right: 10px; } }
