@@ -27,9 +27,9 @@
   .timeline-items::before {
     content: "";
     position: absolute;
-    width: 2px;
+    width: 3px;
     height: 100%;
-    background-color: #4cb945;
+    background-color: #2a6928;
     left: calc(50% - 1px);
   }
   .timeline-item {
@@ -47,12 +47,12 @@
     padding-left: calc(50% + 30px);
   }
   .timeline-dot {
-    height: 16px;
-    width: 16px;
+    height: 32px;
+    width: 32px;
     border-radius: 50%;
-    background-color: #30b06a;
+    background-color: #e54e4b;
     position: absolute;
-    left: calc(50% - 8px);
+    left: calc(50% - 16px);
     top: 10px;
   }
   .timeline-date {
@@ -66,7 +66,8 @@
     width: 100%;
     overflow: hidden;
     background: url(icon-1.png) right bottom / auto 60% no-repeat border-box #4cb945;
-    box-shadow: rgba(51, 53, 72, 0.05) 0px 10px 24px 0px;;
+    box-shadow: rgba(51, 53, 72, 0.05) 0px 10px 24px 0px;
+    border: 3px solid #2a6827;
   }
   .timeline-content h3 {
     color: #0c0d0c;
@@ -433,7 +434,7 @@ html {
 body {
   font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #28282d;
-  background: linear-gradient(white, #e1e5ee);    }
+  background: linear-gradient(white, #63c35f);    }
 
 ul {
   list-style: none;
@@ -606,18 +607,20 @@ h3 {
       .news-section .flex-wrapper {
         display: block; } }
     .news-section .flex-wrapper .post {
-      border-radius: 24px;
+      border-radius: 32px;
       width: 31.5%;
       overflow: hidden;
       box-shadow: rgba(51, 53, 72, 0.05) 0px 10px 24px 0px;
-      background: #fcfcfc;  }
+      background: #4cb946;
+      border: 3px solid #2a6827;  }
       @media only screen and (max-width: 767px) {
         .news-section .flex-wrapper .post {
           width: auto;
           margin-bottom: 30px; } }
       .news-section .flex-wrapper .post img {
         display: block;
-        width: 100%; }
+        width: 100%;
+        border-radius: 32px 32px 0 0;  }
       .news-section .flex-wrapper .post .post-body {
         padding: 17px 30px; }
         .news-section .flex-wrapper .post .post-body__time {
@@ -626,8 +629,8 @@ h3 {
             font-size: 13px;
             font-weight: 600; }
         .news-section .flex-wrapper .post .post-body__head {
-          margin-top: 9px;
-          font-size: 18px;
+          margin-top: 2px;
+          font-size: 24px;
           font-weight: 700; }
         .news-section .flex-wrapper .post .post-body__share-btns {
           padding: 10px 0 5px;
@@ -774,8 +777,8 @@ h3 {
   font-weight: 700; }
 
 .btn--lg {
-  font-size: 17px;
-  padding: 12px 32px;
+  font-size: 20px;
+  padding: 16px 36px;
   font-weight: 700; }
 
 .btn--green {
