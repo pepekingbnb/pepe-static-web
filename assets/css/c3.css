@@ -34,7 +34,7 @@
 
 .c3-chart-arc text {
   fill: #fff;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 /*-- Axis --*/
@@ -191,7 +191,7 @@
 /*-- Arc --*/
 .c3-chart-arcs-title {
   dominant-baseline: middle;
-  font-size: 1.3em;
+  font-size: 2em;
 }
 
 .c3-chart-arcs .c3-chart-arcs-background {
@@ -201,7 +201,7 @@
 
 .c3-chart-arcs .c3-chart-arcs-gauge-unit {
   fill: #000;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .c3-chart-arcs .c3-chart-arcs-gauge-max {
